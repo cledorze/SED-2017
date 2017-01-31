@@ -29,6 +29,6 @@ RUN zypper --non-interactive in apache2 php7
 #RUN sed -i 's#ErrorLog /proc/self/fd/2#ErrorLog "|$/bin/cat 1>\&2"#' /etc/apache2/apache2.conf
 #RUN sed -i 's#CustomLog /proc/self/fd/1 combined#CustomLog "|/bin/cat" combined#' /etc/apache2/apache2.conf
 
-ADD guestbook.php /var/www/html/guestbook.php
-ADD controller.js /var/www/html/controllers.js
-ADD index.html /var/www/html/index.html
+ADD ./frontend/guestbook.php /var/www/html/guestbook.php
+ADD ./frontend/controller.js /var/www/html/controllers.js
+ADD ./frontend/index.html /var/www/html/index.html
