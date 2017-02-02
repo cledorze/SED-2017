@@ -13,7 +13,7 @@ kubectl delete -f redis-slave-controller.yaml
 kubectl delete -f redis-master-service.yaml
 kubectl delete -f redis-master-controller.yaml
 
-Create Pods:
+Create Pods: 
 ------------
 kubectl create -f redis-master-controller.yaml
 kubectl create -f redis-master-service.yaml
