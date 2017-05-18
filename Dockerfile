@@ -18,10 +18,10 @@ RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/sles12sp1-basic SLE12SP1-BAS
 #RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/child/sle-module-web-scripting12-pool-x86_64-sp1/sles12sp1-basic SLE12SP1-WSP
 #RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/child/sle-module-web-scripting12-updates-x86_64-sp1/sles12sp1-basic SLE12SP1-WSU
 RUN update-ca-certificates
-RUN zypper ref -s
+#RUN zypper ref -s
 #RUN zypper lr
 #RUN zypper --non-interactive in apache2 php7
-zypper --non-interactive in apache2
+#zypper --non-interactive in apache2
 # If the container's stdio is connected to systemd-journald,
 # /proc/self/fd/{1,2} are Unix sockets and apache will not be able to open()
 # them. Use "cat" to write directly to the already opened fds without opening
