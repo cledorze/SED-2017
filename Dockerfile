@@ -14,10 +14,10 @@
 
 FROM suse/sles12sp2
 ADD http://suse-manager-1.zypp.fr/pub/RHN-ORG-TRUSTED-SSL-CERT /etc/pki/trust/anchors/smt.crt
-RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/sles12sp1-basic SLE12SP1-BASIC
+#RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/sles12sp1-basic SLE12SP1-BASIC
 #RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/child/sle-module-web-scripting12-pool-x86_64-sp1/sles12sp1-basic SLE12SP1-WSP
 #RUN zypper ar http://suse-manager-1.zypp.fr/ks/dist/child/sle-module-web-scripting12-updates-x86_64-sp1/sles12sp1-basic SLE12SP1-WSU
-RUN update-ca-certificates
+#RUN update-ca-certificates
 #RUN zypper ref -s
 #RUN zypper lr
 #RUN zypper --non-interactive in apache2 php7
